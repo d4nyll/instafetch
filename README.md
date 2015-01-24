@@ -1,7 +1,9 @@
 # instafetch
-Hack the count limit Instagram imposes in its API
+Fetch Instagram media without limit
 
 # What it does
+
+instafetch fetches media from Instagram based on (and only on) the **user and/or tag**, relying on the Instagram API.
 
 If you use the Instagram API to make a call, you will only get 33 results back, no matter what you specify in the `count` paramter. Instafetch will help you fetch more media than the limit imposes, in exchange for more API calls, which can count against your hourly limit.
 
