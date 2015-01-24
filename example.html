@@ -1,0 +1,23 @@
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="./instafetch.js"></script>
+<script>
+$(function() {
+  // Create a callback that simply logs the response and parameters
+  var displayInstaBlocks = function(response, params) {
+    console.log(response);
+    console.log(params);
+  };
+
+  // Get an instance of a fetcher
+  var fetcher = new Instafetch('81e3d3f35c8a4438964001decaa5a31f');
+
+  // Fetch results
+  fetcher.fetch({
+    user: [--USER ID--],
+    tag: [--TAG NAME--],
+    limit: 88,
+    callback: displayInstaBlocks,
+    params: 'instafeed'
+  });
+});
+</script>
