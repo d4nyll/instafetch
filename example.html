@@ -13,11 +13,19 @@ $(function() {
 
   // Fetch results
   fetcher.fetch({
-    user: [--USER ID--],
-    tag: [--TAG NAME--],
+    user: 259220806,
+    tag: '9gag',
     limit: 88,
     callback: displayInstaBlocks,
     params: 'instafeed'
   });
 });
 </script>
+<html>
+<head>
+</head>
+<body>
+<p>Please check the check the console to see the results. We are getting media from 9gag's instagram account that is tagged with the '9gag' tag. You will see two entries - the first one is the object containing all your results, the second is the parameter you passed into your callback function.</p>
+<p>This example uses my Client ID (81e3d3f35c8a4438964001decaa5a31f), which you should change to yours when using it. If nothing is returned, it means my quota of 5000 per hour is used up, or that it's banned. In that case, please use your own Client ID.</p>
+</body>
+</html>
