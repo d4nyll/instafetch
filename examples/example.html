@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css">
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/pojoaque.min.css">
+		<link rel="stylesheet" href="./example.css">
+		<link rel="stylesheet" href="./styles/grid/grid.css">
+	</head>
+	<body>
+		<h1>Instafetch</h1>
+
+		<pre>
+			<code class="language-javascript">
+var fetcher = new Instafetch('81e3d3f35c8a4438964001decaa5a31f'); // Get instance of fetch with Client ID
+fetcher.fetch({                                                   // Fetch results
+  user: 259220806,                                                // User ID
+  tag: '9gag',                                                    // Tag name
+  limit: 88,                                                      // How many to fetch
+  callback: displayInstaBlocks,                                   // pass in your callback...
+  params: '9gagBlock'                                             // ...with a parameter
+});
+			</code>
+		</pre>
+
+		<p>In this example, I am getting 88 pieces of media from the user '9gag', and filtering it by the '9gag' tag.</p>
+
+		<p>Images are displayed using a function found in <code>example.js</code>, you can also see the raw data by checking the console (usually by pressing <kbd>F12</kbd>). In the console, you will see two entries - the first one is the object containing all your results, the second is the parameter you passed into your callback function.</p>
+
+		<p>This example uses my Client ID (81e3d3f35c8a4438964001decaa5a31f), which you should change to yours when using it. If nothing is returned, it means my quota of 5000 per hour is used up, or that it's banned. In that case, please use your own Client ID.</p>
+
+		<div class="instaBlock" id="9gagBlock"></div>
+
+		<footer>
+		  <a href="https://danyll.com">
+		    <img src="http://danyll.com/img/danyll.png" alt="danyll.com logo">
+		  </a>
+		  <p>Made by <a href="https://danyll.com">danyll.com</a></p>
+		</footer>
+
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+		<script src="../instafetch.js"></script>
+		<script src="./example.js"></script>
+		<script src="./styles/grid/grid.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+	</body>
+</html>
