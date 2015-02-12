@@ -1,0 +1,89 @@
+/* SQUARE BLOCKS */
+
+.instaBlock {
+  text-align: center;
+}
+
+.instaBlock img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.instaBlock ul > li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  height: 160px;
+  width: 160px;
+  border: 5px solid white;
+  -webkit-box-shadow: 0px 5px 30px 0px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow:    0px 5px 30px 0px rgba(50, 50, 50, 0.2);
+  box-shadow:         0px 5px 30px 0px rgba(50, 50, 50, 0.2);
+  margin: 10px;
+}
+
+/* LIGHTBOX */
+
+div.lightboxblock {
+  width: 320px;
+  display: inline-block;
+  padding: 18px;
+  background-color: #eed;
+  padding-top: 30px;
+}
+
+div.lightboxblock img {
+  max-width: 100%;
+}
+
+div.lightboxblock p {
+  text-align: left;
+  color: #787878;
+}
+
+.mfp-content {
+  text-align: center;
+}
+
+.statsDiv {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  vertical-align: middle;
+}
+
+.statsDiv > div, .statsDiv > p {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.instaLike {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    background-image: url(https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/heart-24.png);
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+    src='https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/heart-24.png',
+    sizingMethod='scale');
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+    src='https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/heart-24.png',
+    sizingMethod='scale')";
+}
+
+.instaComment {
+    margin-left: 20px;
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    background-image: url(https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/bubble-24.png);
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+    src='https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/bubble-24.png',
+    sizingMethod='scale');
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+    src='https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/bubble-24.png',
+    sizingMethod='scale')";
+}
