@@ -1,6 +1,8 @@
 # instafetch
 Fetch Instagram media without limit
 
+## [Demo](http://d4nyll.github.io/instafetch/)
+
 # What it does
 
 instafetch fetches media from Instagram based on (and only on) the **user and/or tag**, relying on the Instagram API.
@@ -11,7 +13,7 @@ If you use the Instagram API to make a call, you will only get 33 results back, 
 
 > instafetch requires [jQuery](http://jquery.com/), which you can download [here](http://jquery.com/download/).
 
-You can find an example in `example.html`
+You can find an example in `examples/example.html`
 
 1. Include jQuery, followed by instafetch
 2. Write a function to be passed into the fetcher, all your logic should be written here. For example, you may want to use the params to specify the `id` of a `div` to which you will insert the media into
