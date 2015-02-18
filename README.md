@@ -1,4 +1,6 @@
 # instafetch
+
+[![Join the chat at https://gitter.im/d4nyll/instafetch](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/d4nyll/instafetch?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Fetch Instagram media without limit
 
 ## [Demo](http://d4nyll.github.io/instafetch/)
