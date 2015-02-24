@@ -54,3 +54,13 @@ $(function() {
 | maxId    | string   | If specified, instafetch will only fetch media older than the media with this ID                                                                                                                                                                                        | No                                          |
 | callback | function | Create a function and pass it (without `()`) into the fetcher. This will be called once the results are ready. It should accept two arguments - the first is the response object from the fetch, and the second are the arguments passed in from the `params` property. | Yes                                         |
 | params   | object   | An object that will be passed into the callback.                                                                                                                                                                                                                        |                                             |
+
+## Coming soon...
+
+We will provide more template callbacks so you can just plug-and-play. All the provided template callbacks shall have a `params` object with the following properties:
+
+* width
+* height
+* scale (cover, crop)
+* resolution (thumbnail, low, standard)
+* class
