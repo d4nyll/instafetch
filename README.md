@@ -32,7 +32,7 @@ $(function() {
   };
 
   // Get an instance of a fetcher
-  var fetcher = new Instafetch('[--CLIENT ID--]');
+  var fetcher = new Instafetch('[--ACCESS TOKEN--]');
 
   // Fetch results
   fetcher.fetch({
