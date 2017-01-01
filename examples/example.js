@@ -83,7 +83,7 @@ var displayInstaBlocks = function(response, params) {
 
 $(function() {
   // Get an instance of a fetcher
-  var fetcher = new Instafetch('81e3d3f35c8a4438964001decaa5a31f');
+  var fetcher = new Instafetch("XXXXXXX.XXXXXXX.XXXXXXXXXXXXXXXXXXXXX");
 
   // Fetch results
   fetcher.fetch({
